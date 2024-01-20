@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Asignación de Citas Médicas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #3498db; /* Cambiado a azul */
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #2980b9; /* Cambiado a azul más oscuro */
+            color: white;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background-color: #ecf0f1; /* Cambiado a un tono claro para las secciones */
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #3498db; /* Cambiado a azul */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3498db; /* Cambiado a azul */
+            color: white;
+        }
+
+        form {
+            margin-top: 10px;
+        }
+
+        a {
+            color: #3498db; /* Cambiado a azul */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Plataforma de Asignación de Citas Médicas</h1>
+    </header>
+
+    <!-- Portada / Inicio -->
+    <section id="inicio">
+        <h2>Bienvenido</h2>
+        <p>Seleccione una opción:</p>
+        <ul>
+            <li><a href="#registro">Registrar Pacientes</a></li>
+            <li><a href="#consultar-citas">Consultar Citas Médicas</a></li>
+            <li><a href="#consultar-especialistas">Consultar Especialistas</a></li>
+        </ul>
+        <img src="imagen1.jpg" alt="Imagen 1">
+        <img src="imagen2.jpg" alt="Imagen 2">
+        <img src="imagen3.jpg" alt="Imagen 3">
+        <img src="imagen4.jpg" alt="Imagen 4">
+    </section>
+
+    <!-- Registro de Pacientes -->
+    <section id="registro">
+        <h2>Registro de Pacientes</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+
+            <button type="submit">Registrar</button>
+        </form>
+        <p><a href="#inicio">Volver al Inicio</a></p>
+    </section>
+
+    <!-- Consultar Citas Médicas -->
+    <section id="consultar-citas">
+        <h2>Consultar Citas Médicas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Paciente</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí irían las filas de citas médicas -->
+            </tbody>
+        </table>
+        <p><a href="#inicio">Volver al Inicio</a></p>
+    </section>
+
+    <!-- Consultar Especialistas -->
+    <section id="consultar-especialistas">
+        <h2>Consultar Especialistas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Especialidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí irían las filas de especialistas -->
+            </tbody>
+        </table>
+        <p><a href="#inicio">Volver al Inicio</a></p>
+    </section>
+
+</body>
+</html>
